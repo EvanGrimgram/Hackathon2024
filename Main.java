@@ -6,7 +6,7 @@ public class Main {
 
         /* Open the HTML file in a browser */
         try {
-            java.awt.Desktop.getDesktop().browse(new java.io.File("index.html").toURI());
+            java.awt.Desktop.getDesktop().browse(new java.io.File("home.html").toURI());
         } catch (Exception e) {
             e.printStackTrace();
         }
