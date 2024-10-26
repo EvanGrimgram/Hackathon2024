@@ -22,3 +22,9 @@ This interactive web application takes you on a stylish journey through time, sh
 `javac Main.java`
 `java Main`
 6. Open the generated website URL in your web browser.
+
+## Contributors
+1. Bella Griffith - 
+2. John Griffith - 
+3. Raziel Cisneros -
+4. Citlali Aldama -
