@@ -1,8 +1,8 @@
-/* files: FashionTimeline.java, home.html */
+/* files: home.html...  FashionTimeline.java is dead */
 
 public class Main {
     public static void main(String[] args) {
-        FashionTimeline.main(args);
+        /* FashionTimeline.main(args); dead code */
 
         /* Open the HTML file in a browser */
         try {
