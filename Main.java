@@ -8,7 +8,7 @@ public class Main {
         try {
             java.awt.Desktop.getDesktop().browse(new java.io.File("home.html").toURI());
         } catch (Exception e) {
-            e.printStackTrace();
+            e.printStackTrace(); //nbvngg
         }
     }
 }
