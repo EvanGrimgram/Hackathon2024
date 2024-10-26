@@ -6,9 +6,9 @@ public class Main {
 
         /* Open the HTML file in a browser */
         try {
-            java.awt.Desktop.getDesktop().browse(new java.io.File("home.html").toURI());
+            java.awt.Desktop.getDesktop().browse(new java.io.File("home.html").toURI()); //allows Java applications to interact with the desktop environment, such as opening a file in a browser
         } catch (Exception e) {
-            e.printStackTrace(); //nbvngg
+            e.printStackTrace(); //If an error occurs, the catch block will print the stack trace of the exception.
         }
     }
 }
