@@ -8,20 +8,17 @@ This interactive web application takes you on a stylish journey through time, sh
 
 ## How to Use
 1. Download or clone the repository to your local machine.
-2. Extract the `FashionPhotos.zip` file into the project directory.
-3. Compile and run the `Main.java` file to generate the website URL.
-4. Use the generated URL to access the interactive timeline in your web browser.
-5. Click on any time period to view the fashion trends of that era. Clicking on another period will close the previously opened description.
+2. Compile and run the `Main.java` file to generate the website URL.
+3. Use the generated URL to access the interactive timeline in your web browser.
+4. Click on any time period to view the fashion trends of that era. Clicking on another period will close the previously opened description.
 
 ## Installation
-1. Ensure you have Java installed on your machine.
+1. Ensure you have Java and Git installed on your machine.
 2. Clone the repository: `git clone https://github.com/EvanGrimgram/Hackathon2024.git`
 3. Navigate to the project directory: `cd path/to/project/directory`
-4. Extract the `FashionPhotos.zip` file into the project directory. This can be done manually or by typing `unzip FashionPhotos.zip` into command prompt while inside the project directory.
-5. Compile and run the Java program:
-`javac Main.java`
-`java Main`
-6. Open the generated website URL in your web browser.
+4. Compile the Java program: `javac Main.java`
+5. Run the Java program: `java Main`
+5. Open the generated website URL in your web browser.
 
 ## Contributors
 1. Bella Griffith - 
