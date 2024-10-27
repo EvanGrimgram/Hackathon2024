@@ -21,7 +21,7 @@ This interactive web application takes you on a stylish journey through time, sh
 5. Open the generated website URL in your web browser.
 
 ## Contributors
-1. Bella Griffith - Developed HTML, CSS, and Java files. Gathered data for the program and worked on the framework.
+1. Bella Griffith - Developed HTML, CSS, and Java files. Gathered data for the program and polished web layout.
 2. John Griffith - Worked on project framework, Main.java file, and code testing from different environments.
 3. Raziel Cisneros - 
-4. Citlali Aldama -
+4. Citlali Aldama - Developed HTML and CSS files and general web layout.
