@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         String filePath = new File("home.html").getAbsolutePath();
         if (!openWithDefaultBrowser(filePath)) {
-            if (!openWithSpecificBrowser("C:\\Program File\\Google\\Chrome\\Application\\chrome.exe", filePath)) {  //Attempts to open home.html in the default browser using openWithDefaultBrowser. If unsuccessful (false), the code tries specific browsers.
+            if (!openWithSpecificBrowser("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", filePath)) {  //Attempts to open home.html in the default browser using openWithDefaultBrowser. If unsuccessful (false), the code tries specific browsers.
                 if (!openWithSpecificBrowser("C:\\Program Files\\Mozilla Firefox\\firefox.exe", filePath)) {
 		            openWithSpecificBrowser("C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe", filePath);
                 }
