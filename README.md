@@ -21,7 +21,7 @@ This interactive web application takes you on a stylish journey through time, sh
 5. Open the generated website URL in your web browser.
 
 ## Contributors
-1. Bella Griffith - 
-2. John Griffith - 
-3. Raziel Cisneros -
+1. Bella Griffith -
+2. John Griffith - Worked on project framework, Main.java file, and code testing from different environments.
+3. Raziel Cisneros - 
 4. Citlali Aldama -
