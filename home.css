@@ -32,23 +32,19 @@ body {
 }
 .header .description {
   position: absolute;
-  top: 85px; 
+  top: 65px; 
   right: 150px;
-  color: #ffcc00;
+  color: #ffffff;
   font-size: 1.14rem;
   font-weight: normal;
   max-width: 500px; 
   text-align: left; 
   line-height: 2;
-  font-family: 'Impact', sans-serif;
-  background-color: #1a1a1a; /* Darker background box */
+  font-family: 'Georgia', serif;
+  background-color: #1a1a1a;
   padding: 20px;
   border-radius: 15px;
-  text-shadow: 
-    -1px -1px 0 #1d6ea8, /* Darker blue outline */
-    1px -1px 0 #1d6ea8,
-    -1px 1px 0 #1d6ea8,
-    1px 1px 0 #1d6ea8;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* Timeline container */
@@ -67,7 +63,7 @@ body {
   top: 0;
   bottom: 0;
   width: 4px;
-  background-color: #3498db;
+  background-color: #ffffff;
   transform: translateX(-50%);
 }
 
@@ -106,7 +102,7 @@ body {
   top: 15px;
   width: 20px;
   height: 20px;
-  background-color: #3498db;
+  background-color: #ffffff;
   border-radius: 50%;
 }
 
