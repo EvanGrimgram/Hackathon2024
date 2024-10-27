@@ -9,108 +9,167 @@
 <body>
     <div class="header">
         <img src="images/logo.png" style= width:500px>
-        <p>Click Text To See images</p>
+        <div class="description">
+            This interactive web application takes you on a stylish journey through time, showcasing the evolution of Western fashion from the year 1000 to 3000. Using a combination of HTML, Java, and CSS, this timeline allows users to explore different fashion eras with just a click, even into the future!
+        </div>
     </div>
     <div class="timeline">
         <div class="timeline-event" onclick="toggleDetails(this)">
-            <div class="timeline-date">1000</div>
+            <div class="timeline-date">1000s (11th Century)</div>
             <div class="timeline-content">
                 <p>Women’s dress was characterized by long, flowing tunics and gowns made of wool or linen.
                     The layers included an under-tunic with long sleeves and an outer garment, often belted at the waist. Cloaks and
                     shawls provided warmth, and head coverings, like veils or wimples, were common, reflecting both social and
                     religious norms. 
+                    </p>
+                    <hrs>
                     <span class="more-info">
-                        <img src="images/1001.jpg" style= width:100px>
-                        <img src="images/1002.jpg" style= width:130px>
-                        <img src="images/1003.jpg" style= width:150px>
+                        <a href="javascript:void(0);" onclick="openImageWithCaption('images/1001.jpg', 'Saint wearing what looks to be a cyclas over a chemise. She is also wearing a red mantle drapped over her head, ca. 1170s')">
+                            <img src="images/1001.jpg" style="width:100px">
+                        </a>
+                        <a href="javascript:void(0);" onclick="openImageWithCaption('images/1002.jpg', 'Two women wearing cotes and mantles and wrapped veils, c. 1007-1012')">
+                            <img src="images/1002.jpg" style="width:130px">
+                        </a>
+                        <a href="javascript:void(0);" onclick="openImageWithCaption('images/1003.jpg', 'Queen wearing what looks to be a cyclas and a matching mantle over a white cote, c. 1100s')">
+                            <img src="images/1003.jpg" style="width:150px">
+                        </a>
+                        <p style="font-size: 0.9em; color: #888; margin-top: 5px;">Click image to enlarge</p>
                     </span>
                 </p>
             </div>
         </div>
       
         <div class="timeline-event" onclick="toggleDetails(this)">
-            <div class="timeline-date">1200</div>
+            <div class="timeline-date">1200s (13th Century)</div>
             <div class="timeline-content">
                 <p>By the 13th century, dresses became more fitted with a gradual introduction of lacing to
                     define the waist. Women wore long gowns with fitted bodices and flared skirts. Surcoats, a type of sleeveless over-
                     garment, became fashionable, often worn over a fitted under-dress called a kirtle. Veils and coifs (close-fitting
                     caps) continued as popular headwear.
+                    </p>
+                    <hrs>
                     <span class="more-info">
-                        <img src="images/1201.jpg" style= width:100px>
-                        <img src="images/1202.jpeg" style= width:130px>
-                        <img src="images/1203.jpg" style= width:150px>
+                        <a href="image-viewer.html?image=images/1201.jpg&caption=Belted cote under a draped mantle (roman style) , c. 1284" target="_blank">
+                            <img src="images/1201.jpg" style="width:100px">
+                        </a>
+                        <a href="image-viewer.html?image=images/1202.jpeg&caption=Lady wearing a blue cyclas over a cote. Her hair is braided with a cloth band wrapped around it, c. late 1200s" target="_blank">
+                            <img src="images/1202.jpeg" style="width:130px">
+                        </a>
+                        <a href="image-viewer.html?image=images/1203.jpg&caption=Highly embroidered cyclas or surcote under a mantleover a chemise or white cote with coffs, c. 1200s
+                        Rome, Santa Maria in Trastevere, Facade, mosaic from 1200’s
+                        " target="_blank">
+                            <img src="images/1203.jpg" style="width:150px">
+                        </a>
+                        <p style="font-size: 0.9em; color: #888; margin-top: 5px;">Click image to enlarge</p>
                     </span>
                 </p>
             </div>
         </div>
       
         <div class="timeline-event" onclick="toggleDetails(this)">
-            <div class="timeline-date">1400</div>
+            <div class="timeline-date">1400s (15th Century)</div>
             <div class="timeline-content">
                 <p>Fashion in the 1400s emphasized more structure, with gowns featuring a fitted bodice, square
                     necklines, and fuller skirts. The “houppelande” (a robe-like dress with large, voluminous sleeves) gained popularity,
                     as did the hennin, a tall, conical headdress. Fabrics became richer, with silks, velvets, and embroidery, especially
                     among the wealthy.
+                </p>
+                <hrs>
                     <span class="more-info">
-                        <img src="images/1401.jpg" style= width:200px>
-                        <img src="images/1402.jpg" style= width:130px>
-                        <img src="images/1403.jpg" style= width:150px>
+                        <!-- First image with caption -->
+                        <a href="image-viewer.html?image=images/1401.jpg&caption=Detail of a presentation miniature with Christine de Pisan presenting her book to queen Isabeau of Bavaria. " target="_blank">
+                            <img src="images/1401.jpg" style="width:200px">
+                        </a>
+                        <a href="image-viewer.html?image=images/1402.jpg&caption=Giovanna Tornabuoni and her attendants in Italian fashion of the 1480s. The tight slashed sleeves reveal the full chemise sleeves beneath. She wears a giornea over a kirtle or gamurra." target="_blank">
+                            <img src="images/1402.jpg" style="width:130px">
+                        </a>
+                        <a href="image-viewer.html?image=images/1403.jpg&caption=A fur-trimmed Burgundian gown of the mid-15th century has a V-neck that displays the black kirtle and a band of the chemise. Hair is pulled back in an embroidered hennin and covered by a short veil." target="_blank">
+                            <img src="images/1403.jpg" style="width:150px">
+                        </a>
+                        <p style="font-size: 0.9em; color: #888; margin-top: 5px;">Click image to enlarge</p>
                     </span>
                 </p>            
             </div>
         </div>
         
         <div class="timeline-event" onclick="toggleDetails(this)">
-            <div class="timeline-date">1600</div>
+            <div class="timeline-date">1600s (17th Century)</div>
             <div class="timeline-content">
                 <p>This century saw the introduction of more dramatic silhouettes and detailed embellishments.
                     Dresses had a structured bodice, often with a stomacher (a decorated panel over the front), wide skirts, and lace
                     collars. Sleeves were puffed or slashed, and the “petticoat” style with layers under the skirt became more
                     widespread. Hairstyles became elaborate with curls, and the “fontange” (a tall, lace headdress) emerged later in
                     the century.
+                </p>
+                <hrs>
                     <span class="more-info">
-                        <img src="images/1614-18.jpg" style= width:150px>
-                        <img src="images/1667-69.jpg" style= width:130px>
-                        <img src="images/1670.jpg" style= width:150px>
+                        <a href="image-viewer.html?image=images/1614-18.jpg&caption=Traditionally called Dorothy Cary, later Viscountess Rochford. For commentary on sitter and dating, see Sir Roy Strong" target="_blank">
+                            <img src="images/1614-18.jpg" style="width:150px">
+                        </a>
+                        <a href="image-viewer.html?image=images/1667-69.jpg&caption=Susanna Huygens wore a long, tight white satin bodice with paned sleeves lined in pink and a matching petticoat. Her hair is worn in a mass of tight curls, and she wears pearl eardrops and a pearl necklace, 1667–69." target="_blank">
+                            <img src="images/1667-69.jpg" style="width:130px">
+                        </a>
+                        <a href="image-viewer.html?image=images/1670.jpg&caption=Portrait of Barbara Villiers, mistress of King Charles II, painted by John Michael Wright, c. 1670 in the romantic style." target="_blank">
+                            <img src="images/1670.jpg" style="width:150px">
+                        </a>
+                        <p style="font-size: 0.9em; color: #888; margin-top: 5px;">Click image to enlarge</p>
                     </span>
                 </p>              
             </div>
         </div>
         
         <div class="timeline-event" onclick="toggleDetails(this)">
-            <div class="timeline-date">1800</div>
+            <div class="timeline-date">1800s (19th Century)</div>
             <div class="timeline-content">
                 <p>Fashion varied significantly, with early 1800s women embracing high-waisted, flowing
                     “Empire” dresses inspired by classical antiquity. By the mid-century, crinolines and hoop skirts created wider skirts,
                     while the late 1800s saw the bustle, which added volume at the back of the dress. Corsets were common, defining
                     the waist. Fabrics were layered and heavily embellished with lace, ruffles, and bows.
+                </p>
+                <hrs>
                     <span class="more-info">
-                        <img src="images/1822.jpg" style= width:150px>
-                        <img src="images/1883.jpg" style= width:130px>
-                        <img src="images/early 1800s.jpeg" style= width:150px>
+                        <a href="image-viewer.html?image=images/1822.jpg&caption=Shopping in Paris, 1822: The woman wears a demure bonnet, a shawl, and gloves over her dress. The man wears a top hat, long coat, tall collar, and striped trousers with straps under his shoes, 1822." target="_blank">
+                            <img src="images/1822.jpg" style="width:150px">
+                        </a>
+                        <a href="image-viewer.html?image=images/1883.jpg&caption=The fashionable corseted figure of 1883. Hair is swept up to the top of the head, and the front hair is frizzled over the forehead." target="_blank">
+                            <img src="images/1883.jpg" style="width:130px">
+                        </a>
+                        <a href="image-viewer.html?image=images/early%201800s.jpeg&caption=Józef Pitschmann, Public domain, via Wikimedia Commons " target="_blank">
+                            <img src="images/early 1800s.jpeg" style="width:150px">
+                        </a>
+                        <p style="font-size: 0.9em; color: #888; margin-top: 5px;">Click image to enlarge</p>
                     </span>
                 </p>             
              </div>
         </div>
         
         <div class="timeline-event" onclick="toggleDetails(this)">
-            <div class="timeline-date">2000</div>
+            <div class="timeline-date">2000s (21st Century)</div>
             <div class="timeline-content">
                 <p>Women’s fashion in the 2000s reflected a mix of casual comfort and diversity in style. Jeans, t-
                     shirts, dresses, and tailored suits were widely worn, often blending retro influences with modern twists. Fashion
                     became more inclusive and sustainable, focusing on comfort, individuality, and functionality. Styles ranged from
                     minimalism to bold colors and patterns, with fast fashion, athleisure, and eco-friendly fabrics shaping the trends.
+                </p>
+                <hrs>
                     <span class="more-info">
-                        <img src="images/2007.jpg" style= width:150px>
-                        <img src="images/2020s.png" style= width:200px>
-                        <img src="images/early 2000s.jpg" style= width:150px>
+                        <a href="image-viewer.html?image=images/2007.jpg&caption=Fashion trend(s) from the 2010s" target="_blank">
+                            <img src="images/2007.jpg" style="width:150px">
+                        </a>
+                        <a href="image-viewer.html?image=images/2020s.png&caption=Fashion trend(s) in the 2020s" target="_blank">
+                            <img src="images/2020s.png" style="width:200px">
+                        </a>
+                        <a href="image-viewer.html?image=images/early%202000s.jpg&caption=Styles from the early 2000s" target="_blank">
+                            <img src="images/early 2000s.jpg" style="width:150px">
+                        </a>
+                        <p style="font-size: 0.9em; color: #888; margin-top: 5px;">Click image to enlarge</p>
                     </span>
                 </p>              
             </div>
         </div>
         
         <div class="timeline-event" onclick="toggleDetails(this)">
-            <div class="timeline-date">2200</div>
+            <div class="timeline-date">2200s (23rd Century)</div>
             <div class="timeline-content">
                 <p>By the year 2200, Western fashion has embraced sustainability and technology in
                     unprecedented ways. Clothing is primarily made from bioengineered fabrics that can self-repair
@@ -118,17 +177,26 @@
                     monitor the wearer’s health and adjust temperature and fit for optimal comfort. The aesthetic
                     leans towards minimalist designs with clean lines and neutral colors, reflecting a society focused
                     on efficiency and ecological balance.
+                </p>
+                <hrs>
                     <span class="more-info">
-                        <img src="images/2200 (1).png" style= width:200px>
-                        <img src="images/2200 (2).png" style= width:130px>
-                        <img src="images/2200 (3).png" style= width:150px>
+                        <a href="image-viewer.html?image=images/2200%20(1).png&caption=Fashion in the 2200s: Bioengineered and self-repairing fabrics" target="_blank">
+                            <img src="images/2200 (1).png" style="width:200px">
+                        </a>
+                        <a href="image-viewer.html?image=images/2200%20(2).png&caption=2200s style with embedded health-monitoring sensors" target="_blank">
+                            <img src="images/2200 (2).png" style="width:130px">
+                        </a>
+                        <a href="image-viewer.html?image=images/2200%20(3).png&caption=Minimalist designs focused on ecological balance in the 2200s" target="_blank">
+                            <img src="images/2200 (3).png" style="width:150px">
+                        </a>
+                        <p style="font-size: 0.9em; color: #888; margin-top: 5px;">Click image to enlarge</p>
                     </span>
                 </p>              
             </div>
         </div>
           
         <div class="timeline-event" onclick="toggleDetails(this)">
-            <div class="timeline-date">2400</div>
+            <div class="timeline-date">2400s (25th Century)</div>
             <div class="timeline-content">
                 <p>Fashion in 2400 is characterized by its fusion of virtual and physical elements. Augmented
                     reality (AR) clothing allows individuals to change their appearance at will, projecting different
@@ -136,35 +204,54 @@
                     intricate designs inspired by historical art movements, combined with futuristic materials that are
                     lightweight and highly durable. Personal expression through fashion is at an all-time high, with
                     each outfit being a unique blend of digital and physical craftsmanship.
+                </p>
+                <hrs>
                     <span class="more-info">
-                        <img src="images/2400 (1).png" style= width:200px>
-                        <img src="images/2400 (2).png" style= width:130px>
-                        <img src="images/2400 (3).png" style= width:150px>
+                        <a href="image-viewer.html?image=images/2400%20(1).png&caption=Fashion in 2400: Augmented Reality (AR) clothing for customizable styles" target="_blank">
+                            <img src="images/2400 (1).png" style="width:200px">
+                        </a>
+                        <a href="image-viewer.html?image=images/2400%20(2).png&caption=Bold colors and patterns inspired by historical art movements in 2400" target="_blank">
+                            <img src="images/2400 (2).png" style="width:130px">
+                        </a>
+                        <a href="image-viewer.html?image=images/2400%20(3).png&caption=Lightweight and durable futuristic materials in 2400 fashion" target="_blank">
+                            <img src="images/2400 (3).png" style="width:150px">
+                        </a>
+                        <p style="font-size: 0.9em; color: #888; margin-top: 5px;">Click image to enlarge</p>
+                        </span>
                     </span>
                 </p>              
             </div>
         </div>
 
         <div class="timeline-event" onclick="toggleDetails(this)">
-            <div class="timeline-date">2600</div>
+            <div class="timeline-date">2600s (27th Century)</div>
             <div class="timeline-content">
-                <p>CIn 2600, fashion has become a form of personal technology. Clothing is integrated with
+                <p>In 2600, fashion has become a form of personal technology. Clothing is integrated with
                     advanced nanotechnology, enabling garments to change shape, color, and texture on
                     command. This adaptability allows for multifunctional outfits that can transition from casual to
                     formal with a simple voice command. The style is a mix of sleek, form-fitting designs and
                     flowing, dynamic fabrics that respond to the wearer’s movements. Fashion is not just about
                     aesthetics but also about enhancing human capabilities and interaction with the environment. 
+                </p>
+                <hrs>
                     <span class="more-info">
-                        <img src="images/2600 (1).png" style= width:200px>
-                        <img src="images/2600 (2).png" style= width:150px>
-                        <img src="images/2600 (3).png" style= width:150px>
+                        <a href="image-viewer.html?image=images/2600%20(1).png&caption=In 2600, clothing integrates advanced nanotechnology for adaptability" target="_blank">
+                            <img src="images/2600 (1).png" style="width:200px">
+                        </a>
+                        <a href="image-viewer.html?image=images/2600%20(2).png&caption=Multifunctional outfits that change from casual to formal on command in 2600" target="_blank">
+                            <img src="images/2600 (2).png" style="width:150px">
+                        </a>
+                        <a href="image-viewer.html?image=images/2600%20(3).png&caption=Sleek designs and responsive fabrics enhance interactions with the environment in 2600 fashion" target="_blank">
+                            <img src="images/2600 (3).png" style="width:150px">
+                        </a>
+                        <p style="font-size: 0.9em; color: #888; margin-top: 5px;">Click image to enlarge</p>
                     </span>
                 </p>              
             </div>
         </div>
           
         <div class="timeline-event" onclick="toggleDetails(this)">
-            <div class="timeline-date">2800</div>
+            <div class="timeline-date">2800s (29th Century)</div>
             <div class="timeline-content">
                 <p>By 2800, Western fashion has evolved into a symbiotic relationship between humans and their
                     attire. Clothing is grown from organic materials that are genetically engineered to provide
@@ -172,17 +259,26 @@
                     designs are inspired by nature, with flowing, organic shapes and colors that mimic the natural
                     world. Fashion is deeply personalized, with each garment being a living entity that adapts to the
                     wearer’s lifestyle and preferences.
+                </p>
+                <hrs>
                     <span class="more-info">
-                        <img src="images/2800 (1).png" style= width:200px>
-                        <img src="images/2800 (2).png" style= width:130px>
-                        <img src="images/2800 (3).png" style= width:150px>
+                        <a href="image-viewer.html?image=images/2800%20(1).png&caption=In 2800, clothing grows from organic materials, offering protection and healing" target="_blank">
+                            <img src="images/2800 (1).png" style="width:200px">
+                        </a>
+                        <a href="image-viewer.html?image=images/2800%20(2).png&caption=Fashion in 2800 reflects nature-inspired designs and adaptive materials" target="_blank">
+                            <img src="images/2800 (2).png" style="width:130px">
+                        </a>
+                        <a href="image-viewer.html?image=images/2800%20(3).png&caption=Deeply personalized garments that adjust to lifestyle in the year 2800" target="_blank">
+                            <img src="images/2800 (3).png" style="width:150px">
+                        </a>
+                        <p style="font-size: 0.9em; color: #888; margin-top: 5px;">Click image to enlarge</p>
                     </span>
                 </p>              
             </div>
         </div>
 
         <div class="timeline-event" onclick="toggleDetails(this)">
-            <div class="timeline-date">3000</div>
+            <div class="timeline-date">3000s (31st Century)</div>
             <div class="timeline-content">
                 <p>In the year 3000, fashion transcends the physical realm entirely. People wear holographic
                     garments that can be customized in real-time, offering limitless possibilities for self-expression.
@@ -191,10 +287,19 @@
                     minimalism, reflecting a society that has moved beyond traditional material constraints. Fashion
                     in 3000 is a dynamic, ever-changing art form that seamlessly integrates with the digital and
                     physical worlds.
+                </p>
+                <hrs>
                     <span class="more-info">
-                        <img src="images/3000 (1).png" style= width:200px>
-                        <img src="images/3000 (2).png" style= width:170px>
-                        <img src="images/3000 (3).png" style= width:170px>
+                        <a href="image-viewer.html?image=images/3000%20(1).png&caption=Fashion in the year 3000 transcends physicality with holographic garments" target="_blank">
+                            <img src="images/3000 (1).png" style="width:200px">
+                        </a>
+                        <a href="image-viewer.html?image=images/3000%20(2).png&caption=Holographic clothing in 3000 allows infinite customization through neural interfaces" target="_blank">
+                            <img src="images/3000 (2).png" style="width:170px">
+                        </a>
+                        <a href="image-viewer.html?image=images/3000%20(3).png&caption=Fashion in 3000: An ever-changing art form blending digital and physical realms" target="_blank">
+                            <img src="images/3000 (3).png" style="width:170px">
+                        </a>
+                        <p style="font-size: 0.9em; color: #888; margin-top: 5px;">Click image to enlarge</p>
                     </span>
                 </p>              
             </div>

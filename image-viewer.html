@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Viewer</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #121212;
+            color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden; /* Prevents scrolling */
+        }
+        .container {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        .container img {
+            max-width: 100%;
+            max-height: 80vh; /* Limit image height to 80% of the viewport */
+            border-radius: 8px;
+        }
+        .caption {
+            margin-top: 10px;
+            font-size: 1rem; /* Slightly smaller font size */
+            color: #ffffff; /* White color for the text */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="" alt="Image" id="viewer-image">
+        <div class="caption" id="viewer-caption"></div>
+    </div>
+    
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const imageUrl = urlParams.get('image');
+        const imageCaption = urlParams.get('caption');
+
+        document.getElementById('viewer-image').src = imageUrl;
+        document.getElementById('viewer-caption').textContent = imageCaption;
+    </script>
+</body>
+</html>

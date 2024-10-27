@@ -1,107 +1,185 @@
-.header{
-  top: 0%;
+/* General body styling for a dark theme */
+body {
+  background-color: #121212;
+  color: #f5f5f5;
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
 
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f4f4f9;
-  }
-  
-  .timeline {
-    position: relative;
-    padding: 10px 0;
-    width: 60%;
-  }
-  
-  .timeline::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 4px;
-    background-color: #3498db;
-    transform: translateX(-50%);
-  }
-  
-  .timeline-event {
-    position: relative;
-    width: 50%;
-    padding: 20px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  .timeline-event:hover {
-    transform: scale(1.02);
-  }
-  
-  .timeline-event:nth-child(odd) {
-    left: 0;
-  }
-  
-  .timeline-event:nth-child(even) {
-    left: 50%;
-  }
-  
-  .timeline-date {
-    font-weight: bold;
-    font-size: 30px;
-    color: #3498db;
-  }
-  
-  .timeline-content {
-    background-color: #ffffff;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-  }
-  
-  .timeline-event:nth-child(odd) .timeline-content {
-    margin-left: 40px;
-  }
-  
-  .timeline-event:nth-child(even) .timeline-content {
-    margin-right: 40px;
-  }
-  
-  .timeline-event::before {
-    content: '';
-    position: absolute;
-    top: 15px;
-    width: 20px;
-    height: 20px;
-    background-color: #3498db;
-    border-radius: 50%;
-  }
-  
-  .timeline-event:nth-child(odd)::before {
-    right: -10px;
-  }
-  
-  .timeline-event:nth-child(even)::before {
-    left: -10px;
-  }
-  
-  .more-info {
-    display: none;
-    color: #333;
-    font-size: 0.9em;
-    margin-top: 8px;
-    line-height: 1.4;
-  }
-  
-  .timeline-event.expanded .more-info {
-    display: inline;
-  }
-  
+/* Header styling */
+.header {
+  text-align: left;
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: #222222;
+}
+
+.header img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 150px;
+}
+
+#themeToggle {
+  color: #ffffff;
+  background-color: #444;
+  border: none;
+  padding: 8px 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.header .description {
+  position: absolute;
+  top: 85px; 
+  right: 150px;
+  color: #ffcc00;
+  font-size: 1.14rem;
+  font-weight: normal;
+  max-width: 500px; 
+  text-align: left; 
+  line-height: 2;
+  font-family: 'Impact', sans-serif;
+  background-color: #1a1a1a; /* Darker background box */
+  padding: 20px;
+  border-radius: 15px;
+  text-shadow: 
+    -1px -1px 0 #1d6ea8, /* Darker blue outline */
+    1px -1px 0 #1d6ea8,
+    -1px 1px 0 #1d6ea8,
+    1px 1px 0 #1d6ea8;
+}
+
+/* Timeline container */
+.timeline {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+  position: relative;
+}
+
+/* Central line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 49%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #3498db;
+  transform: translateX(-50%);
+}
+
+/* Timeline events */
+.timeline-event {
+  position: relative;
+  width: 45%;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  border: 1px solid #333333;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Apply scaling transition directly to .timeline-event */
+}
+
+.timeline-event:hover {
+  transform: scale(1.05); /* Smooth scaling effect on hover */
+}
+
+/* Align odd and even events */
+.timeline-event:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-event:nth-child(even) {
+  left: 49.25%;
+  text-align: left;
+}
+
+/* Circle markers */
+.timeline-event::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  background-color: #3498db;
+  border-radius: 50%;
+}
+
+.timeline-event:nth-child(odd)::before {
+  right: -10px;
+}
+
+.timeline-event:nth-child(even)::before {
+  left: -10px;
+}
+
+/* Timeline date styling */
+.timeline-date {
+  font-size: 1.5rem;
+  color: #ffcc00;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Content styling */
+.timeline-content p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #e8e8e8;
+}
+
+/* More info section, hidden by default */
+.more-info {
+  display: none;
+  color: #333;
+  font-size: 0.9em;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+.timeline-event.expanded .more-info {
+  display: inline;
+}
+
+.more-info img {
+  margin: 10px;
+  border-radius: 5px;
+}
+
+/* Light Theme */
+.light-theme {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+.light-theme .header {
+  background-color: #d9d9d9;
+  color: #121212;
+}
+
+.light-theme #themeToggle {
+  color: #121212;
+  background-color: #ccc;
+}
+
+.light-theme .timeline-event {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+}
+
+.light-theme .timeline-date {
+  color: #3498db;
+}
+
+.light-theme .timeline-content p {
+  color: #333333;
+}
+
+.light-theme .more-info {
+  color: #555;
+}
